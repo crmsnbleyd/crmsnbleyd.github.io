@@ -31,4 +31,11 @@ h2{
 }
 .active{
     background-color: #F08080;
-}    
+} 
+.bg-dark{
+  background-color: purple;  
+  color: antiquewhite;
+}
+.card-body{
+    box-sizing: border-box;
+}   
