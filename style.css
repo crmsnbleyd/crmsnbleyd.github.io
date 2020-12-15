@@ -1,0 +1,14 @@
+body{
+    background-color: #fcd380;
+    color: black;
+    font-weight: 600;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.list-group-item{
+    background-color: #9c93b5;
+}
