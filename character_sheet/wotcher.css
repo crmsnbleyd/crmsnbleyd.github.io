@@ -39,3 +39,6 @@ h2{
 .card-body{
     box-sizing: border-box;
 }   
+.navbar{
+    background-color: #a3d360;
+}
