@@ -2,10 +2,7 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "http://crmsnbleyd.github.io/recipes", 
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear"
