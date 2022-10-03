@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
     A step-by-step guide to get up to speed with transformers,
     specifically electra, so that one can train their own
     model and publish a paper.
+domain: crmsnbleyd.github.io
 baseurl: "/electra" # the subpath of your site, e.g. /blog
 url: "https://crmsnbleyd.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
