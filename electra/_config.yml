@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
     specifically electra, so that one can train their own
     model and publish a paper.
 baseurl: "/electra" # the subpath of your site, e.g. /blog
-url: "https://github.com/crmsnbleyd/crmsnbleyd.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://crmsnbleyd.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  crmsnbleyd
 
