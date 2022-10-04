@@ -1,7 +1,9 @@
 ---
-Title: An introduction to transformers
+Title: About
+Summary: An introduction to Transformers and NLP
 Date: 2022-10-03 23:35
 Category: General
+Status: published
 ---
 
 This README is a primer on all the terms that one needs to be aware of and the knowledge one would need to gain in order to confidently work on an academic paper implementing a transformer language model.
