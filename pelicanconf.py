@@ -2,7 +2,8 @@ AUTHOR = 'Arnav Andrew Jose'
 SITENAME = 'Electra'
 SITEURL = ''
 
-PATH = 'content'
+PATH = 'electra'
+OUTPUT_PATH = 'electra/'
 
 TIMEZONE = 'Asia/Kolkata'
 
@@ -28,4 +29,4 @@ SOCIAL = (('Github', 'https://github.com/crmsnbleyd'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
