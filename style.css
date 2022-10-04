@@ -7,6 +7,9 @@ a{
 a:hover{
     background-color: white;
 }
+body{
+    font-family: "Courier New", serif;
+}
 .center{
     text-align: center;
 }
@@ -16,6 +19,9 @@ a:hover{
     font-family: chicago;
     font-weight: bold;
     font-size: 0.8em;
+}
+#contacts .btn{
+    width: 180px;
 }
 .heading{
     font-size: 3rem;
