@@ -1,14 +1,40 @@
-body{
-    background-color: #fcd380;
-    color: black;
-    font-weight: 600;
-    font-size: large;
+*{
+    box-sizing: border-box;
 }
 a{
-    text-decoration: none;
+    background-color: lightgray;
+}
+a:hover{
+    background-color: white;
+}
+.center{
+    text-align: center;
+}
+.col-main{
+    flex: 1;
+}
+#contacts{
+    font-family: chicago;
     font-weight: bold;
-
+    font-size: 0.8em;
 }
-.list-group-item{
-    background-color: #9c93b5;
+.heading{
+    font-size: 3rem;
 }
+.layout{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+.socials{
+    width: 20px;
+    vertical-align: bottom;
+}
+.standard-dialog p{
+    font-size: 1.2em;
+}
+/* div.window{ */
+/*     margin-left: auto; */
+/*     margin-right: auto; */
+/*     width: 70%; */
+/* } */

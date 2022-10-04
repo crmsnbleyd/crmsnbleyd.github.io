@@ -1,30 +1,60 @@
 <html>
   <head>
     <title>Navigation to Projects</title>
-   <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="window">
-      <div class="title-bar">
-	<button aria-label="Close" class="close"></button>
-	<h1 class="title">Welcome to Drew's homepage!</h1>
-	<button aria-label="Resize" class="resize"></button>
+    <div class="container">
+      <div class="layout">
+	<p class="col col-main"></p>
+	<div class="window sidebar">
+	  <div class="title-bar">
+	    <button aria-label="Close" class="close"></button>
+	    <h1 class="title">Links to sites</h1>
+	    <button aria-label="Resize" class="resize"></button>
+	  </div>
+	  <div class="window-pane">
+	    <ul class="menu-items">
+	      <li>
+		<a	 href="electra/index.html">Guide to pre-training transformers (specifically Electra)</a>
+	      </li>
+	      <li>
+		<a	 href="coursera-html-css-js/module-5/index.html">Single Page Application using Bootstrap and Vanilla JS</a>
+	      </li>
+	      <li>
+		<a href="character_sheet/index.html">Character Sheet for my (homebrew) D&D 5e character</a>
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+	<p></p>
+	<p class="col col-complementary" role="complementary"></p>
+	<div class="standard-dialog">
+	  <h1 class="heading center">Welcome to Drew's homepage!</h1>
+	  <h2 class="subheading">About Me</h2>
+	  <p> Hi, I'm Arnav Andrew Jose, currently a 4th year undergraduate student at Manipal Institute of Technology enrolled in the B.Tech. Computer Science and Engineering course.
+	  </p>
+	  <p>My areas of interest include:
+	    <ul class="menu-items">
+	      <li> Linguistics</li>
+	      <li> Functional Languages </li>
+	      <li> Hacking Emacs (and Common) Lisp</li>
+	      <li> Cybersecurity</li>
+	      <li> Cloud computing and DevOps</li>
+	      </ul>
+	  </p>
+	  <h2 class="subheading">Reach Me At</h2>
+	  <p id="contacts">
+	  <img src="icons/github.png" class="socials"/>
+	  <a href="https://github.com/crmsnbleyd">My Github</a>
+	  <br/>
+	  <br/>
+	  <img src="icons/linkedin.png" class="socials">
+	  <a href="https://www.linkedin.com/in/arnav-andrew-jose">My Linkedin</a>
+	  </p>
+	</div>
       </div>
-    	<ul class="menu-items">
-
-	  <li>
-	  <a	 href="electra/index.html">Guide to pre-training transformers (specifically Electra)</a>
-	  </li>
-	  <li>
-	  <a	 href="coursera-html-css-js/module-5/index.html">Single Page Application using Bootstrap and Vanilla JS</a>
-	  </li>
-	  <li>
-        <a href="character_sheet/index.html">Character Sheet for my D&D 5e character</a>
-	  </li>
-      </ul>
-
-
     </div>
   </body>
 </html>
