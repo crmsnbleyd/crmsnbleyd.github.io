@@ -11,7 +11,6 @@ a:hover{
     text-align: center;
 }
 .col-main{
-    flex: 1;
 }
 #contacts{
     font-family: chicago;
@@ -23,8 +22,7 @@ a:hover{
 }
 .layout{
     display: flex;
-    justify-content: space-between;
-    height: 100vh;
+    justify-content: space-around;
 }
 .socials{
     width: 20px;
@@ -32,6 +30,12 @@ a:hover{
 }
 .standard-dialog p{
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 800px) {
+    .layout {
+	flex-wrap: wrap;
+    }
 }
 /* div.window{ */
 /*     margin-left: auto; */
