@@ -1,5 +1,5 @@
 AUTHOR = 'Arnav Andrew Jose'
-SITENAME = 'Electra'
+SITENAME = 'Language Modelling Course'
 SITEURL = ''
 
 PATH = 'electra'
