@@ -38,23 +38,23 @@
  
 
 <meta name="author" content="Arnav Andrew Jose" />
-<meta name="description" content="What is a hyperparameter?" />
+<meta name="description" content="Explainer on Transformer models" />
 <meta name="keywords" content="">
 
 
   <meta property="og:site_name" content="Language Modelling Course"/>
-  <meta property="og:title" content="Hyperparameters"/>
-  <meta property="og:description" content="What is a hyperparameter?"/>
+  <meta property="og:title" content="Transformer"/>
+  <meta property="og:description" content="Explainer on Transformer models"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="./hyperparameter.html"/>
+  <meta property="og:url" content="./transformer.html"/>
   <meta property="og:type" content="article"/>
-  <meta property="article:published_time" content="2022-12-04 11:19:00+05:30"/>
+  <meta property="article:published_time" content="2022-12-04 11:08:00+05:30"/>
   <meta property="article:modified_time" content=""/>
   <meta property="article:author" content="./author/arnav-andrew-jose.html">
-  <meta property="article:section" content="Terminology"/>
+  <meta property="article:section" content="Models"/>
   <meta property="og:image" content="">
 
-  <title>Language Modelling Course &ndash; Hyperparameters</title>
+  <title>Language Modelling Course &ndash; Transformer</title>
 
 
 </head>
@@ -129,19 +129,17 @@
 <article class="single">
   <header>
       
-    <h1 id="hyperparameter">Hyperparameters</h1>
+    <h1 id="transformer">Transformer</h1>
     <p>
-      Posted on Sun 04 December 2022 in <a href="./category/terminology.html">Terminology</a>
+      Posted on Sun 04 December 2022 in <a href="./category/models.html">Models</a>
 
     </p>
   </header>
 
 
   <div>
-    <p>In machine learning, a hyperparameter is a parameter whose value is used to control the learning process. By contrast, the values of other parameters (typically node weights) are derived via training. </p>
-<p>The time required to train and test a model can depend upon the choice of its hyperparameters.</p>
-<p>They are important to performance of a model, but tuning them can be ignored if the amount of computing power available to the researcher is not enough to do multiple rounds of training since it is mostly trial-and-error.</p>
-<p>A good starting point would be to use hyperparameters used in similar tasks, such as a language model for a related language.</p>
+    <p>Transformers were first introduced by Google in 2017 as an improvement on the then-state-of-the-art models used for language tasks: <a href="">Recurrent Neural Networks</a>. Its advantage over RNNs is that it can process sequences in both directions, allowing them to train on larger amount of data.</p>
+<p>They are good at interpreting context and dealing with words with many meanings.</p>
   </div>
   <div class="tag-cloud">
     <p>

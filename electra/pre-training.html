@@ -48,7 +48,7 @@
   <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="./pre-training.html"/>
   <meta property="og:type" content="article"/>
-  <meta property="article:published_time" content="2022-12-04 11:19:00+05:30"/>
+  <meta property="article:published_time" content="2022-12-04 09:33:00+05:30"/>
   <meta property="article:modified_time" content=""/>
   <meta property="article:author" content="./author/arnav-andrew-jose.html">
   <meta property="article:section" content="Terminology"/>
@@ -138,7 +138,11 @@
 
 
   <div>
-    
+    <p>Pre-training in AI refers to training a model with one task to help it form parameters that can be used in other tasks.</p>
+<p>The language models we will be dealing with are trained in a specific way to solve an artificial task (for example, guessing blanks in sentences for <a href="./bert.html">BERT</a>), and that knowledge is used in order to solve other tasks.</p>
+<p>BERT and <a href="./electra.html">ELECTRA</a> are two pre-training techniques used for the same structure of nodes, and both of them use <em>unstructured data</em>, that is, data we do not have to label ourselves, in the form of a large corpus of text that we can obtain from the internet.</p>
+<p>Pre-training involves setting the number of parameters and layers required, pointing the training code to the text used to train, and letting it run and refine the network for a while. This can take days.</p>
+<p>The training code for many popular models like ELECTRA are available online on <a href="https://huggingface.co">Hugging Face</a>, and only need to be modified slighty, easing our task considerably.</p>
   </div>
   <div class="tag-cloud">
     <p>

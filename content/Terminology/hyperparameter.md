@@ -1,7 +1,7 @@
 ---
 Title: Hyperparameters
 Summary: What is a hyperparameter?
-Date: 2022-12-04 09:33
+Date: 2022-12-04 11:19
 Status: published
 Slug:hyperparameter
 ---
