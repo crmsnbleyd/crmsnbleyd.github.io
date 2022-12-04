@@ -1,167 +1,278 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<title>Language Modelling Course</title>
-		<meta charset="utf-8" />
-		<link rel="profile" href="http://gmpg.org/xfn/11" />
-		<link rel="stylesheet" type="text/css" href="./theme/css/style.css" />
-		<link rel='stylesheet' id='oswald-css'  href='http://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2' type='text/css' media='all' />
-		<style type="text/css">
-			body.custom-background { background-color: #f5f5f5; }
-		</style>
-		<link rel="alternate" type="application/atom+xml"
-			title="Language Modelling Course — Flux Atom"
-			href="./" /> 
-		<!--[if lte IE 8]><script src="./theme/js/html5shiv.js"></script><![endif]-->
-		<script src="/mint/?js" type="text/javascript"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+    <meta name="author" content="Arnav Andrew Jose" />
+    <meta name="description" content="" />
+  <meta property="og:site_name" content="Language Modelling Course"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:title" content="Language Modelling Course"/>
+  <meta property="og:description" content=""/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="."/>
+
+  <title>Language Modelling Course</title>
+
+
 </head>
+<body class="dark-theme">
 
-<body class="home blog custom-background single-author" >
-	<div id="container">
-		<div id="header">
-				<h1 id="site-title"><a href=".">Language Modelling Course</a></h1>
-		</div><!-- /#banner -->
-		
-		<div id="menu">
-			<div class="menu-navigation-container">
-				<ul id="menu-navigation" class="menu">
-						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./category/introduction.html">Introduction</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./category/models.html">Models</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./category/neural_networks.html">Neural_Networks</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./category/terminology.html">Terminology</a></li>
-						<li  class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://huggingface.co">Huggingface</a></li>
-						<li  class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pytorch.org/docs/stable/index.html">Pytorch Documentation</a></li>
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
 
-				</ul>
-			</div> <!--/#menu-navigation-container-->
-		</div><!-- /#menu -->
-		
-		<div class="page-title">
-		</div>
-	
-		<div id="contents">
-<div class="post type-post status-publish format-standard hentry category-general" id="post">
-	<div class="entry-meta">
-		<div class="date"><a href="./pytorch-introduction.html">Wed 26 October 2022</a></div>
-			<span class="cat-links"><a href="./category/introduction.html" title="View all posts in Introduction" rel="category tag">Introduction</a></span>
-	</div> <!-- /#entry-meta -->
-	<div class="main">
-		<h2 class="entry-title">
-			<a href="./pytorch-introduction.html" title="Permalink to Pytorch Introduction" rel="bookmark">Pytorch Introduction</a>
-		</h2>
-		<div class="entry-content">
-			<p>Pytorch is python bindings for the Torch library from Lua, which is a machine learning framework based on using GPUs as the compute platform.</p>
-<h2>Install</h2>
-<div class="highlight"><pre><span></span><code>python -m pip install --upgrade pip
-python -m pip install pytorch
-</code></pre></div>
+    <h1>
+      <a href="./"></a>
+    </h1>
 
-<h2>Check if GPU is being used</h2>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">torch</span>
-<span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span>
-<span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">device_count</span><span class="p">()</span>
-<span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">current_device</span><span class="p">()</span>
-<span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">get_device_name</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</code></pre></div>
 
-<p>This should show something like 'GeForce GTX 940M', or whatever your GPU name is.</p>
-		</div> <!--/#entry-content-->
-	</div> <!--/#main-->
-</div>  <!--/#post--><div class="post type-post status-publish format-standard hentry category-general" id="post">
-	<div class="entry-meta">
-		<div class="date"><a href="./language-model.html">Sun 04 December 2022</a></div>
-			<span class="cat-links"><a href="./category/terminology.html" title="View all posts in Terminology" rel="category tag">Terminology</a></span>
-	</div> <!-- /#entry-meta -->
-	<div class="main">
-		<h2 class="entry-title">
-			<a href="./language-model.html" title="Permalink to Language model" rel="bookmark">Language model</a>
-		</h2>
-		<div class="entry-content">
-			<p><a href="https://en.wikipedia.org/wiki/Language_model"> Wikipedia Page </a></p>
-<p>Simply put, a language model is the way of representing a language in the form of numerical data for computation purposes.</p>
-<p>Earlier, grammar based language models were used, which were made by hand using knowledge of the language but recently, we are moving on to more statistical methods, especially using <a href="./ann.html">artificial neural networks</a>.</p>
-		</div> <!--/#entry-content-->
-	</div> <!--/#main-->
-</div>  <!--/#post--><div class="post type-post status-publish format-standard hentry category-general" id="post">
-	<div class="entry-meta">
-		<div class="date"><a href="./ann.html">Sun 04 December 2022</a></div>
-			<span class="cat-links"><a href="./category/neural_networks.html" title="View all posts in Neural_Networks" rel="category tag">Neural_Networks</a></span>
-	</div> <!-- /#entry-meta -->
-	<div class="main">
-		<h2 class="entry-title">
-			<a href="./ann.html" title="Permalink to Artificial Neural Network" rel="bookmark">Artificial Neural Network</a>
-		</h2>
-		<div class="entry-content">
-			<p>An artificial neural network is an interconnected group of <em>nodes</em>, inspired by a simplification of neurons in a brain. Here, each circular node represents an artificial neuron and an arrow represents a connection from the output of one artificial neuron to the input of another.</p>
-<p><img alt="NeuralNetworkNodes" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Artificial_neural_network.svg"></p>
-<p>Neural networks learn (or are trained) by processing examples, each of which contains a known "input" and "result," forming probability-weighted associations between the two, which are stored within the data structure of the net itself. The training of a neural network from a given example is usually conducted by determining the difference between the processed output of the network (often a prediction) and a target output. This difference is the error. The network then adjusts its weighted associations according to a learning rule and using this error value.</p>
-<p>The neurons are typically organized into multiple <em>layers</em>, especially in deep learning. Neurons of one layer connect only to neurons of the immediately preceding and immediately following layers. The layer that receives external data is the <em>input layer</em>. The layer that produces the ultimate result is the <em>output layer</em>. In between them are zero or more <em>hidden layers</em>. Single layer and unlayered networks are also used. Between two layers, multiple connection patterns are possible. They can be <em>fully connected</em>, with every neuron in one layer connecting to every neuron in the next layer. They can be <em>pooling</em>, where a group of neurons in one layer connect to a single neuron in the next layer, thereby reducing the number of neurons in that layer.</p>
-		</div> <!--/#entry-content-->
-	</div> <!--/#main-->
-</div>  <!--/#post--><div class="post type-post status-publish format-standard hentry category-general" id="post">
-	<div class="entry-meta">
-		<div class="date"><a href="./hyperparameter.html">Sun 04 December 2022</a></div>
-			<span class="cat-links"><a href="./category/terminology.html" title="View all posts in Terminology" rel="category tag">Terminology</a></span>
-	</div> <!-- /#entry-meta -->
-	<div class="main">
-		<h2 class="entry-title">
-			<a href="./hyperparameter.html" title="Permalink to Hyperparameters" rel="bookmark">Hyperparameters</a>
-		</h2>
-		<div class="entry-content">
-			<p>In machine learning, a hyperparameter is a parameter whose value is used to control the learning process. By contrast, the values of other parameters (typically node weights) are derived via training. </p>
-<p>The time required to train and test a model can depend upon the choice of its hyperparameters.</p>
-<p>They are important to performance of a model, but tuning them can be ignored if the amount of computing power available to the researcher is not enough to do multiple rounds of training since it is mostly trial-and-error.</p>
-<p>A good starting point would be to use hyperparameters used in similar tasks, such as a language model for a related language.</p>
-		</div> <!--/#entry-content-->
-	</div> <!--/#main-->
-</div>  <!--/#post--><div class="post type-post status-publish format-standard hentry category-general" id="post">
-	<div class="entry-meta">
-		<div class="date"><a href="./bert.html">Sun 04 December 2022</a></div>
-			<span class="cat-links"><a href="./category/models.html" title="View all posts in Models" rel="category tag">Models</a></span>
-	</div> <!-- /#entry-meta -->
-	<div class="main">
-		<h2 class="entry-title">
-			<a href="./bert.html" title="Permalink to BERT" rel="bookmark">BERT</a>
-		</h2>
-		<div class="entry-content">
-			
-		</div> <!--/#entry-content-->
-	</div> <!--/#main-->
-</div>  <!--/#post--><div class="post type-post status-publish format-standard hentry category-general" id="post">
-	<div class="entry-meta">
-		<div class="date"><a href="./lstm.html">Sun 04 December 2022</a></div>
-			<span class="cat-links"><a href="./category/neural_networks.html" title="View all posts in Neural_Networks" rel="category tag">Neural_Networks</a></span>
-	</div> <!-- /#entry-meta -->
-	<div class="main">
-		<h2 class="entry-title">
-			<a href="./lstm.html" title="Permalink to LSTM" rel="bookmark">LSTM</a>
-		</h2>
-		<div class="entry-content">
-			
-		</div> <!--/#entry-content-->
-	</div> <!--/#main-->
-</div>  <!--/#post--><div class="post type-post status-publish format-standard hentry category-general" id="post">
-	<div class="entry-meta">
-		<div class="date"><a href="./pre-training.html">Sun 04 December 2022</a></div>
-			<span class="cat-links"><a href="./category/terminology.html" title="View all posts in Terminology" rel="category tag">Terminology</a></span>
-	</div> <!-- /#entry-meta -->
-	<div class="main">
-		<h2 class="entry-title">
-			<a href="./pre-training.html" title="Permalink to Pre-training" rel="bookmark">Pre-training</a>
-		</h2>
-		<div class="entry-content">
-			
-		</div> <!--/#entry-content-->
-	</div> <!--/#main-->
-</div>  <!--/#post--><div class="navigation">
-</div>
-		</div>
-		
-		<div id="footer">
-			<p>Powered by <a href="http://getpelican.com">Pelican</a>, theme by <a href="http://bunnyman.info">tBunnyMan</a>.</p>
-		</div><!-- /#footer -->
-	</div><!-- /#container -->
-	<div style="display:none"></div>
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+
+          <li>
+            <a target="_self" href="/category/introduction.html" >Introduction</a>
+          </li>
+          <li>
+            <a target="_self" href="/category/terminology.html" >Terminology</a>
+          </li>
+          <li>
+            <a target="_self" href="/category/neural_networks.html" >Neural Networks</a>
+          </li>
+          <li>
+            <a target="_self" href="/category/models.html" >Models</a>
+          </li>
+          <li>
+            <a target="_self" href="https://huggingface.co" >Huggingface</a>
+          </li>
+          <li>
+            <a target="_self" href="https://pytorch.org/docs/stable/index.html" >Pytorch Documentation</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-Github"
+           href="https://github.com/crmsnbleyd"
+           target="_blank">
+          <i class="fa-brands fa-Github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Linkedin"
+           href="https://www.linkedin.com/in/arnav-andrew-jose"
+           target="_blank">
+          <i class="fa-brands fa-Linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+
+
+<article>
+  <header>
+    <h2><a href="./pytorch-introduction.html#pytorch-introduction">Pytorch Introduction</a></h2>
+    <p>
+      Posted on Wed 26 October 2022 in <a href="./category/introduction.html">Introduction</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p>General overview of Pytorch and its usage</p></div>
+        <br>
+        <a class="btn"
+           href="./pytorch-introduction.html#pytorch-introduction">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="./language-model.html#language-model">Language model</a></h2>
+    <p>
+      Posted on Sun 04 December 2022 in <a href="./category/terminology.html">Terminology</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p>Definition of language model</p></div>
+        <br>
+        <a class="btn"
+           href="./language-model.html#language-model">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="./ann.html#ann">Artificial Neural Network</a></h2>
+    <p>
+      Posted on Sun 04 December 2022 in <a href="./category/neural_networks.html">Neural_Networks</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p>A discussion of artificial neural networks.</p></div>
+        <br>
+        <a class="btn"
+           href="./ann.html#ann">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="./hyperparameter.html#hyperparameter">Hyperparameters</a></h2>
+    <p>
+      Posted on Sun 04 December 2022 in <a href="./category/terminology.html">Terminology</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p>What is a hyperparameter?</p></div>
+        <br>
+        <a class="btn"
+           href="./hyperparameter.html#hyperparameter">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="./bert.html#bert">BERT</a></h2>
+    <p>
+      Posted on Sun 04 December 2022 in <a href="./category/models.html">Models</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p>A basic introduction to the BERT language model.</p></div>
+        <br>
+        <a class="btn"
+           href="./bert.html#bert">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="./lstm.html#lstm">LSTM</a></h2>
+    <p>
+      Posted on Sun 04 December 2022 in <a href="./category/neural_networks.html">Neural_Networks</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p>How Long short-term memory works.</p></div>
+        <br>
+        <a class="btn"
+           href="./lstm.html#lstm">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="./pre-training.html#pre-training">Pre-training</a></h2>
+    <p>
+      Posted on Sun 04 December 2022 in <a href="./category/terminology.html">Terminology</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p>What pre-training is and how it is done.</p></div>
+        <br>
+        <a class="btn"
+           href="./pre-training.html#pre-training">
+          Continue reading
+        </a>
+  </div>
+</article>
+
+  <div class="pagination">
+  </div>
+
+
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Language Modelling Course ",
+  "url" : ".",
+  "image": "",
+  "description": ""
+}
+</script>
 </body>
 </html>

@@ -9,11 +9,8 @@ TIMEZONE = 'Asia/Kolkata'
 
 DEFAULT_LANG = 'en'
 
-THEME = "electra-theme/pelican-chunk"
+THEME = "electra-theme/Flex"
 THEME_COLOR = "dark" #or "light"
-MINT = True
-DISPLAY_CATEGORIES_ON_MENU = True
-SINGLE_AUTHOR = True
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -23,8 +20,12 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Huggingface', 'https://huggingface.co'),
-         ('Pytorch Documentation', 'https://pytorch.org/docs/stable/index.html'),)
+LINKS = ( ('Introduction', '/category/introduction.html'),
+          ('Terminology', '/category/terminology.html'),
+          ('Neural Networks', '/category/neural_networks.html'),
+          ('Models', '/category/models.html'),
+          ('Huggingface', 'https://huggingface.co'),
+          ('Pytorch Documentation', 'https://pytorch.org/docs/stable/index.html'),)
 
 # Social widget
 SOCIAL = (('Github', 'https://github.com/crmsnbleyd'),
