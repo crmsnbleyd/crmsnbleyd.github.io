@@ -9,8 +9,11 @@ TIMEZONE = 'Asia/Kolkata'
 
 DEFAULT_LANG = 'en'
 
-THEME = "electra-theme/Flex"
+THEME = "electra-theme/pelican-chunk"
 THEME_COLOR = "dark" #or "light"
+MINT = True
+DISPLAY_CATEGORIES_ON_MENU = True
+SINGLE_AUTHOR = True
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
