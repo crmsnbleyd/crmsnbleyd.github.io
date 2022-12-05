@@ -20,10 +20,10 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = ( ('Introduction', '/category/introduction.html'),
-          ('Terminology', '/category/terminology.html'),
-          ('Neural Networks', '/category/neural_networks.html'),
-          ('Models', '/category/models.html'),
+LINKS = ( ('Introduction', '/electra/category/introduction.html'),
+          ('Terminology', '/electra/category/terminology.html'),
+          ('Neural Networks', '/electra/category/neural_networks.html'),
+          ('Models', '/electra/category/models.html'),
           ('Huggingface', 'https://huggingface.co'),
           ('Pytorch Documentation', 'https://pytorch.org/docs/stable/index.html'),)
 
