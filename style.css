@@ -10,6 +10,9 @@ a:hover{
 body{
     font-family: "Courier New", serif;
 }
+#figlet-welcome{
+    font-size: 1vw;
+}
 .center{
     text-align: center;
 }
