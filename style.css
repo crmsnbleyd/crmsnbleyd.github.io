@@ -11,7 +11,7 @@ body{
     font-family: "Courier New", serif;
 }
 #figlet-welcome{
-    font-size: 1vw;
+    font-size: 1.3vw;
 }
 .center{
     text-align: center;
@@ -41,7 +41,7 @@ body{
     font-size: 1.2em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .layout {
 	flex-wrap: wrap;
     }
